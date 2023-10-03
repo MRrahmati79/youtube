@@ -1,7 +1,7 @@
-"use client"
-import { UserOutlined , BellOutlined  } from "@ant-design/icons";
+"use client";
+import { UserOutlined, BellOutlined } from "@ant-design/icons";
 import React, { useState } from "react";
-import { Avatar, Button, Popover } from "antd";
+import { Avatar, Popover } from "antd";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -20,7 +20,6 @@ export default function Header() {
       <div className="w-1/4 flex  justify-around items-center">
         <div className="">camera</div>
         <div className="">
-          {" "}
           <Popover
             content={<a onClick={hide}>Close</a>}
             title="Title"
@@ -30,7 +29,6 @@ export default function Header() {
           >
             <Avatar size="large" icon={<BellOutlined />} />
           </Popover>
-          
         </div>
         <div className="">
           <Avatar size="large" icon={<UserOutlined />} />
